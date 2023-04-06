@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>List Smartphone</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<form id="add-smartphone">
+  <table>
+    <tr>
+      <td>Producer:</td>
+      <td><label for="producer"></label><input type="text" id="producer" placeholder="producer"></td>
+    </tr>
+    <tr>
+      <td>Model:</td>
+      <td><label for="model"></label><input type="text" id="model" placeholder="model"></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><label for="price"></label><input type="text" id="price" placeholder="price"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Add" onclick="addNewSmartPhone()"></td>
+    </tr>
+  </table>
+</form>
+<h1>Smartphone List</h1>
+<table>
+  <thead>
+      <tr>
+          <th>Producer</th>
+          <th>Model</th>
+          <th>Price</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody id="content">
+  </tbody>
+</table>
+<script src="phones.js"></script>
+</body>
+</html>
